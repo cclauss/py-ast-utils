@@ -23,6 +23,11 @@ import re
 import create_node
 import node_tree_util
 
+try:
+    xrange          # Python 2
+except NameError:
+    xrange = range  # Python 3
+
 
 class Error(Exception):
   pass
